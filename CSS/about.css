@@ -1,0 +1,39 @@
+.about{
+    background: url(../Images/about.jpg);
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    background-size: cover;
+    background-position:top;
+}
+
+.container{
+    position: absolute;
+    height: 60vh;
+    width: 42%;
+    background: rgb(0, 0, 0,.6);
+    top:11%;
+    left: 30%;
+    font-weight: 400;
+    transform: translate((-50%,-50%));
+    color: white;
+    padding-top: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.container h1{
+    color: #ffffff;
+}
+
+.container p{
+    margin-top: 20px;
+}
+
+.about-detail{
+    margin: 50px 10px 10px 0px;
+    padding-top: 20px;
+    font-size: 18px;
+}
+

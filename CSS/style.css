@@ -1,0 +1,251 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 110vh;
+    background:  linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+    background-size: cover;
+    background-position:center;
+    display:flex;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 77px 0px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;   
+}
+
+header .logo
+{
+    position: relative;
+    font-size: 2em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration:none;
+    letter-spacing: 1px;
+}
+
+header .navigation {
+   position: relative;
+   display: flex;  
+}
+
+a {
+    font-size: 18px;
+    display: inline-block;
+    color: #fff;
+    margin-right:30px;
+    text-decoration: none;      
+}
+
+.active {
+    color:#ffffff;
+    font-weight: bolder;  
+}
+
+.active:hover {
+    color: #008e18;
+}
+
+header .navigation li {
+    list-style: none;
+}
+  
+header .navigation li a:hover {
+    color: #008e18;
+}
+
+.donate {
+  display: inline-block;
+  padding: 2px 15px;
+  background-color: #008e18;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.donate:hover {
+    background-color: black;
+}
+
+@media (max-width:991px) {
+    header
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    section {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+        background-size: cover;
+        display: flex;
+        background-repeat: no-repeat;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 59px 0px;
+    }
+    header .navigation .active {
+        display: flex;
+        position: fixed;
+        top: 50px;
+        right: 0;
+        margin-top:10px;
+        flex-direction: column;
+        align-items: center;
+        line-height: 30px;
+    }
+    header .navigation {
+        position: relative;
+        display: flex;
+        display: none;
+    }
+    .toggleMenu {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(../Images/menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        filter: invert(1);
+        transform: scale(0.9);
+        margin-right: 15px;
+    }
+    .container-el {
+        width: 40%;
+    }
+}
+
+/* Contact Form Css */
+
+.heading-el {
+    text-align: center;
+    color: #008e18;
+    padding: 20px 20px;   
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#008e18 ;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: black;
+    color: #008e18;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.form-container {
+  
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background:  linear-gradient(rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.5)), url(../Images/contact.jpg);
+    background-size: cover;
+    background-position:center;
+    display:flex;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 100px;
+
+}
+ 
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    resize: vertical 
+  }
+
+input[type=submit] {   
+    background-color: #008e18;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #008e18;
+}
+
+.s-btn:hover {
+    background-color: #092f3f;
+}
+  
+.container-el {
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(92, 213, 230, 0.1)), #686868;
+    padding: 10px;
+    margin:0 auto;
+    width: 40%;  
+}
+
+/* Footer Css */
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+footer a{
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #008e18;
+}
